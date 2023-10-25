@@ -5,11 +5,12 @@
 // '206 333 4444'
 // Returns true if valid, false if not valid
 function testPhoneNumber(phoneNumberString) {
-    const phoneNumberRE = /^\d{3} \d{3} \d{4}$/
+    const phoneNumberRE = /^(\d{3} \d{3} \d{4})|(\(\d{3}\) \d{3}\-\d{4})|(\d{3}\-\d{3}\-\d{4})$/
     
     return phoneNumberRE.test(phoneNumberString);
 }
 console.log(testPhoneNumber('206 333 4444'));
+console.log(testPhoneNumber('206-333-4444'));
 
 // Explanation of RegExp
 // ^      start of line
