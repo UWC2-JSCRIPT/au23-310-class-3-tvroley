@@ -17,8 +17,8 @@ class SpaceShip {
 
 // 2. Call the constructor with a couple ships, 
 // and call accelerate on both of them.
-const tvc15 = new SpaceShip('TVC 15', 12);
+const xWing = new SpaceShip('X Wing', 12);
 const millenniumFalcon = new SpaceShip('Millennium Falcon', 11);
 
-tvc15.accelerate();
+xWing.accelerate();
 millenniumFalcon.accelerate();
