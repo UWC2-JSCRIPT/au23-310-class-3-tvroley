@@ -38,7 +38,10 @@ console.log(getTotalPoints('wwdl')); // should equal 7
 // i.e. {name: 'Sounders', results: 'wwlwdd'}
 // Logs each entry to the console as "Team name: points"
 function orderTeams(...teams) {
-
+  teams.forEach((team) => {
+    const teamScore = getTotalPoints(team.results);
+    console.log(`${team.name}: ${teamScore}`);
+  });
 }
 
 
